@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+.container {
+  display: grid;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.translated-text {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.media-player {
+  margin-top: 20px;
+}
+
+.custom-button-fill {
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #1d2b64 0%, #03a9f4 100%);
+  border: 2px solid transparent;
+}
+
+.custom-button-fill:hover {
+  position: relative;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #1d2b64, #03a9f4) border-box;
+  cursor: pointer;
+}
+
+.custom-button-fill:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #1d2b64 0%, #03a9f4 100%);
+}
+
+.custom-button-fill .button-fill-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.custom-button-fill:hover .button-fill-text {
+  background: linear-gradient(90deg, #1d2b64 0%, #03a9f4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-button-fill .button-fill-icon {
+  color: #fff;
+}
+
+.custom-button-fill:hover .button-fill-icon {
+  color: #1d2b64;
+}
+
+.card {
+  display: grid;
+  width: 300px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
