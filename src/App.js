@@ -68,7 +68,8 @@ function App() {
 
   return (
 
-    <div className="container">    <div className="card">
+    <div className="container">    
+    <div className="card">
 
       <h3>Text to Speech Converter (Hindi)</h3>
       <form onSubmit={handleSubmit}>
